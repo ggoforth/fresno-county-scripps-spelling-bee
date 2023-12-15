@@ -49,6 +49,7 @@ def spelling_bee(word):
     if spelling.lower() == word.lower():
         # Randomly select an affirmative word
         affirmation = random.choice(affirmative_words)
+        print(affirmation)
         score['correct'] += 1
     else:
         print(f"Incorrect. The correct spelling is {word}.")
