@@ -46,7 +46,7 @@ def spelling_bee(word):
         print("Please spell the word you just heard: ")
         spelling = input()
 
-    if spelling.lower() == word.lower():
+    if spelling.lower().strip() == word.lower().strip():
         # Randomly select an affirmative word
         affirmation = random.choice(affirmative_words)
         print(affirmation)
